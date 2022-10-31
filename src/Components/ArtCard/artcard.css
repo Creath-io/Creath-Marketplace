@@ -1,0 +1,22 @@
+.artText p{
+    color: white;
+}
+
+.artMain{
+    height: 40vw;
+}
+
+.artImage{
+    height: 70%;
+    width: 100%;
+}
+
+.artImage img{
+    width: 100%;
+    height: 100%;
+}
+
+.artImage video{
+    width: 100%;
+    height: 100%;
+}

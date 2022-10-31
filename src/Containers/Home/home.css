@@ -1,0 +1,344 @@
+.home_main{
+    width: 100%;
+}
+
+.main_hero_section{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+    position: relative;
+    left: 4vw;
+    color: black;
+    top: 3vw;
+}
+
+.hero_text{
+    color: black !important;
+    position: relative;
+    top: 2vw;
+}
+
+.hero_text h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 3vw;
+    line-height: 1.5;
+}
+
+.hero_text p{
+    font-family: 'Manrope', sans-serif;
+    font-size: 1vw;
+    color: gray;
+    line-height: 2;
+}
+
+.hero_text button{
+    background-color: black;
+    border: none;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    padding: 1vw 4vw 1vw 4vw;
+    font-size: 1.2vw;
+}
+
+.slick-slider{
+    top: 4vw;
+    width: 40%;
+}
+
+.slick-slider::before{
+    content: "Featured Arts";
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5vw;
+    font-weight: 700;
+    position: relative;
+    bottom: 1.2vw;
+}
+
+.slide{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Text{
+    width: 100%;
+    color: black !important;
+    position: relative;
+    top: 1vw;
+}
+
+.art_name{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+
+.artist_name{
+    font-family: 'Manrope', serif;
+    color: gray;
+    font-size: 1.2vw;
+}
+
+hr{
+    position: relative;
+    bottom: 0.5vw;
+}
+
+.price p{
+    font-weight: 800;
+    font-family: 'Manrope', serif;
+    font-size: 1.5vw;
+}
+
+.arrows{
+    position: absolute;
+    width: 7%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    right: 30vw;
+    bottom: -6vw;
+}
+
+.home_media{
+    width: 100% !important;
+    height: 25vw !important;
+    object-fit: cover;
+}
+
+.about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: 15vw;
+    background-image: url(./background.png);
+    background-size: cover;
+    padding: 10vw 0 10vw 0;
+    background-position: center;
+}
+
+.about h1{
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2.5vw;
+    position: relative;
+    bottom: 3vw;
+}
+
+.home_youtube{
+    width: 55%;
+    top: 10vw;
+}
+
+.topNft{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    top: 20vw;
+}
+
+.topNft h1{
+    font-family: 'Playfair Display', serif;
+    padding: 0vw 0vw 0vw 2vw;
+    margin-bottom: 2vw;
+    font-weight: 700;
+}
+
+.top{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nft{
+    width: 30%;
+}
+
+.nft img{
+    width: 100% !important;
+    height: 25vw;
+    object-fit: cover;
+}
+
+.topNft button{
+    background-color: black;
+    border: none;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    padding: 1vw 4vw 1vw 4vw;
+    font-size: 1.2vw;
+    align-self: center;
+    position: relative;
+    top: 2vw;
+}
+
+.goldenticket{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    top: 60vw;
+}
+
+.hotCollections{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    top: 30vw;
+}
+
+.hotCollections h1{
+    font-family: 'Playfair Display', serif;
+    padding: 0vw 0vw 0vw 2vw;
+    margin-bottom: 2vw;
+    font-weight: 700;
+}
+
+.hot{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hot .nft{
+    width: 30%;
+}
+
+.hot .nft img{
+    width: 100% !important;
+    height: 25vw;
+    object-fit: cover;
+}
+
+.hotCollections button{
+    background-color: black;
+    border: none;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    padding: 1vw 4vw 1vw 4vw;
+    font-size: 1.2vw;
+    align-self: center;
+    position: relative;
+    top: 2vw;
+}
+
+.partners{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    top: 40vw;
+    background: rgba(246, 246, 246, 1);
+    padding: 4vw 0 4vw 0;
+}
+
+.partners h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 2.5vw;
+    position: relative;
+    bottom: 2vw;
+}
+
+.partners .Logos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.partners .Logos img{
+    width: 9%;
+}
+
+.goldenticket{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    top: 40.2vw;
+    background: black;
+}
+
+.goldenticket h1{
+    font-weight: 500;
+    font-size: 3vw;
+}
+
+.goldenticket h1 span{
+    color: gold;
+}
+
+.goldenContent{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.goldenticket video{
+    width: 40%;
+}
+
+.goldenText{
+    width: 40%;
+    font-size: 2vw;
+    font-weight: 500;
+    color: white;
+}
+
+.goldenText h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2.2vw;
+    position: relative;
+    bottom: 2.2vw;
+}
+
+.goldenText p{
+    font-size: 1.4vw;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 200;
+    line-height: 2;
+}
+
+.goldenText button{
+    background-color: white;
+    border: none;
+    color: black;
+    font-family: 'Manrope', sans-serif;
+    padding: 1vw 4vw 1vw 4vw;
+    font-size: 1.2vw;
+    align-self: center;
+    position: relative;
+    top: 2vw;
+    font-weight: 700;
+}

@@ -1,0 +1,12 @@
+.MarketMain{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 4%;
+    grid-row-gap: 12vw;
+    justify-items: center;
+    align-items: center;
+    padding: 10vw 0vw 10vw 6vw;
+    position: relative;
+}
