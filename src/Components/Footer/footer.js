@@ -11,16 +11,16 @@ const Footer = ()=>{
     return(
         <div className='footer_main'>
             <h1>Creath NFT Marketplace</h1>
-            <p>Where Digital Meets Physical</p>
+            <p className="header_p">Where Digital Meets Physical</p>
             <div className='footer_buttons'>
                 <button>Become a Creator</button>
                 <button>Hire a Talent</button>
                 <button>Blog</button>
                 <button>Terms and Condition</button>
-                <button>Resources</button>
+                <button className='odd'>Resources</button>
             </div>
             <div className='footer_logos'>
-                <img src={Creath} alt="Creath Logo: Where digital meets physical"/>
+                <img src={Creath} alt="Creath Logo: Where digital meets physical" className='footer_creath'/>
                 <div className='social_logo'>
                     <img src={Instagram} alt="Instagram Logo: link to Chreat instagram page"/>
                     <img src={Twitter} alt="Twitter Logo: link to Chreat twitter page" />
