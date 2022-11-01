@@ -1,0 +1,15 @@
+.footer_main{
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 3vw 0 2vw 0;
+}
+
+.footer_main h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 2.5vw;
+}

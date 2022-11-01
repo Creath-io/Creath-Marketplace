@@ -6,9 +6,15 @@ import 'slick-carousel/slick/slick-theme.css'
 import Data from './arts'
 import Golden from './golden.mp4'
 import YoutubeEmbed from "../../Components/Youtube/youtube";
+import FAQ from '../../Components/FAQ/faq';
 import Left from './left.svg'
 import Right from './right.svg'
 import Logo from './logo.png'
+import Blog from '../../Components/BlogCard/blog';
+import One from './one.png';
+import Two from './two.png';
+import Footer from '../../Components/Footer/footer';
+import Three from './three.png';
 import './home.css'
 
 
@@ -176,6 +182,43 @@ const Home = ()=>{
                         <source  src={Golden} type="video/mp4"/>
                     </video>
                 </div>
+            </div>
+            <div className="freq">
+                <h1>Frequently Asked Questions</h1>
+                <p>Everything you need to know about Creath marketplace</p>
+                <FAQ question = {"What is Chreat ?"} answer = {"Creath is a next-generation tech company that delivers Web3, FinTech, PropTech, and Blockchain services. Our platform has an integrated marketplace built on the Ethereum Blockchain. This marketplace will serve as a gallery for artists to display their digitized artworks to a diverse global audience."}/>
+                <FAQ question = {"What is Chreat ?"} answer = {"Creath is a next-generation tech company that delivers Web3, FinTech, PropTech, and Blockchain services. Our platform has an integrated marketplace built on the Ethereum Blockchain. This marketplace will serve as a gallery for artists to display their digitized artworks to a diverse global audience."}/>
+                <FAQ question = {"What is Chreat ?"} answer = {"Creath is a next-generation tech company that delivers Web3, FinTech, PropTech, and Blockchain services. Our platform has an integrated marketplace built on the Ethereum Blockchain. This marketplace will serve as a gallery for artists to display their digitized artworks to a diverse global audience."}/>
+                <FAQ question = {"What is Chreat ?"} answer = {"Creath is a next-generation tech company that delivers Web3, FinTech, PropTech, and Blockchain services. Our platform has an integrated marketplace built on the Ethereum Blockchain. This marketplace will serve as a gallery for artists to display their digitized artworks to a diverse global audience."}/>
+                <FAQ question = {"What is Chreat ?"} answer = {"Creath is a next-generation tech company that delivers Web3, FinTech, PropTech, and Blockchain services. Our platform has an integrated marketplace built on the Ethereum Blockchain. This marketplace will serve as a gallery for artists to display their digitized artworks to a diverse global audience."}/>
+                <FAQ question = {"What is Chreat ?"} answer = {"Creath is a next-generation tech company that delivers Web3, FinTech, PropTech, and Blockchain services. Our platform has an integrated marketplace built on the Ethereum Blockchain. This marketplace will serve as a gallery for artists to display their digitized artworks to a diverse global audience."}/>
+                <FAQ question = {"What is Chreat ?"} answer = {"Creath is a next-generation tech company that delivers Web3, FinTech, PropTech, and Blockchain services. Our platform has an integrated marketplace built on the Ethereum Blockchain. This marketplace will serve as a gallery for artists to display their digitized artworks to a diverse global audience."}/>
+            </div>
+            <div className='newsletter'>
+                <div className='newsletter_text'>
+                    <h2>Join our newsletter<br></br>
+                        to stay updated
+                    </h2>
+                    <p>Get the last information in your<br></br>
+                        inbox, we dont spam.
+                    </p>
+                </div>
+                <div className='form'>
+                    <input type="email" className="email" placeholder='Enter Email'></input>
+                    <button>Submit</button>
+                </div>
+            </div>
+            <div className='blog'>
+                <h1>Blog</h1>
+                <div className='posts'>
+                    <Blog title={"What are NFTS....."} date={"April 09, 2022"} alt={"Blog Image"} image={One}/>
+                    <Blog title={"What are NFTS....."} date={"April 09, 2022"} alt={"Blog Image"} image={Two}/>
+                    <Blog title={"What are NFTS....."} date={"April 09, 2022"} alt={"Blog Image"} image={Three}/>
+                </div>
+                <button>See More</button>
+            </div>
+            <div className='footer'>
+                <Footer/>
             </div>
         </div>
     )

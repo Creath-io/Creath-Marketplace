@@ -1,0 +1,31 @@
+.blog_main{
+    width: 25%;
+}
+
+.blog_main img{
+    width: 100%;
+}
+
+.blog_text {
+    position: relative;
+    bottom: 11vw;
+    border-bottom-left-radius: 0.3vw;
+    border-bottom-right-radius: 0.3vw;
+    color: white;
+    left: 0vw;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.7651435574229692) 61%, rgba(0,0,0,0.01) 100%);
+    padding: 5vw 0vw 0.5vw 1vw;
+}
+
+.blog_text h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 2vw;
+}
+
+.blog_text p{
+    font-family: 'Manrope', serif;
+    font-weight: 200;
+    font-size: 1vw;
+}

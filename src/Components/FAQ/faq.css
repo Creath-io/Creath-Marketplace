@@ -1,0 +1,51 @@
+.faq_main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 90%;
+    border-bottom: thin solid rgba(234, 236, 240, 1);
+    overflow: hidden;
+    max-height: 3vw;
+    transition: 1s all ease-in;
+    margin-top: 3vw;
+}
+
+.faq_main h3{
+    font-family:'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 1.8vw;
+}
+
+.show{
+    max-height: 10vw;
+}
+
+.sub{
+    position: absolute;
+    opacity: 0;
+    right: 5vw;
+    transition: 0.5s all ease-in;
+    width: 1.17%;
+}
+
+.add{
+    width: 1.5%;
+    transition: 0.5s all ease-in;
+}
+
+.show .sub{
+    opacity: 1;
+}
+
+.show .add{
+    opacity: 0;
+}
+
+.question{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
