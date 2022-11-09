@@ -107,9 +107,13 @@ hr{
 }
 
 .home_media{
-    width: 100% !important;
-    height: 25vw !important;
+    width: 100%;
+    height: 25vw;
     object-fit: cover;
+    margin: 0 auto;
+    transition: .2s all ease-in;
+    z-index: 1000;
+    position: relative;
 }
 
 .about{
@@ -152,7 +156,7 @@ hr{
 
 .topNft h1{
     font-family: 'Playfair Display', serif;
-    padding: 0vw 0vw 0vw 2vw;
+    padding: 0vw 0vw 0vw 6vw;
     margin-bottom: 2vw;
     font-weight: 700;
 }
@@ -166,7 +170,7 @@ hr{
 }
 
 .nft{
-    width: 30%;
+    width: 25%;
 }
 
 .nft img{
@@ -209,7 +213,7 @@ hr{
 
 .hotCollections h1{
     font-family: 'Playfair Display', serif;
-    padding: 0vw 0vw 0vw 2vw;
+    padding: 0vw 0vw 0vw 6vw;
     margin-bottom: 2vw;
     font-weight: 700;
 }
@@ -223,7 +227,7 @@ hr{
 }
 
 .hot .nft{
-    width: 30%;
+    width: 25%;
 }
 
 .hot .nft img{
@@ -447,6 +451,7 @@ hr{
     position: relative;
     left: 6vw;
     font: 3vw;
+    font-weight: 700;
 }
 
 .blog button{

@@ -1,15 +1,19 @@
 .Header{
     color: black !important;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2vw 0 2vw;
+    padding: 1vw 5vw 1vw 5vw;
     position: relative;
     left: 5vw;
-    top: 1.5vw;
+    top: 0vw;
     font-family: 'Manrope', sans-serif;
+    position: sticky;
+    background-color: white !important;
+    background: white !important;
+    z-index: 10;
 }
 
 .menu{
@@ -24,13 +28,14 @@
 .menu p{
     cursor: pointer;
     color: black !important;
+    font-size: 1.2vw;
 }
 
 .Login{
     background: transparent;
     color: black;
     font-weight: 600;
-    font-size: 1vw;
+    font-size: 1.2vw;
     border: none;
 }
 
@@ -38,7 +43,7 @@
     border: none;
     padding: 0.5vw 1.5vw;
     font-weight: 600;
-    font-size: 1vw;
+    font-size: 1.2vw;
     background-color: black;
     color: white;
 }

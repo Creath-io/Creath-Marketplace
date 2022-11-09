@@ -14,6 +14,8 @@ import Blog from '../../Components/BlogCard/blog';
 import One from './one.png';
 import Two from './two.png';
 import Footer from '../../Components/Footer/footer';
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 import Three from './three.png';
 import './home.css'
 
@@ -49,7 +51,7 @@ const Home = ()=>{
                         Using.map((card, index)=>{
                             return(
                                 <div key={index} className="slide">
-                                    {card.img.includes('mp4') ?<video autoPlay muted playsInline className="home_media" ><source src={card.img} type="video/mp4"/></video> : <img className="home_media" src={card.img} alt={card.title}/> }
+                                    {card.img.includes('mp4') ?<video autoPlay muted playsInline className="home_media" ><source src={card.img} type="video/mp4"/></video> : <Zoom><img className="home_media" src={card.img} alt={card.title}/></Zoom> }
                                     <div className="Text">
                                         <p className="art_name">{card.title}</p>
                                         <p className="artist_name">{card.artist}</p>
@@ -79,7 +81,7 @@ const Home = ()=>{
                 <h1>Top NFTs</h1>
                 <div className='top'>
                     <div className="nft">
-                        {Using[0].img.includes('mp4') ?<video autoPlay muted playsInline className="home_media" ><source src={Using[0].img} type="video/mp4"/></video> : <img  src={Using[0].img} alt={Using[2].title}/> }
+                        {Using[0].img.includes('mp4') ?<video autoPlay muted playsInline className="home_media" ><source src={Using[0].img} type="video/mp4"/></video> : <Zoom><img  src={Using[0].img} alt={Using[2].title}/></Zoom> }
                         <div className="Text">
                             <p className="art_name">{Using[0].title}</p>
                             <p className="artist_name">{Using[0].artist}</p>
@@ -90,7 +92,7 @@ const Home = ()=>{
                         </div>
                     </div>
                     <div className="nft">
-                        {Using[1].img.includes('mp4') ?<video autoPlay muted playsInline className="home_media" ><source src={Using[1].img} type="video/mp4"/></video> : <img src={Using[1].img} alt={Using[1].title}/> }
+                        {Using[1].img.includes('mp4') ?<video autoPlay muted playsInline className="home_media" ><source src={Using[1].img} type="video/mp4"/></video> : <Zoom><img src={Using[1].img} alt={Using[1].title}/></Zoom> }
                         <div className="Text">
                             <p className="art_name">{Using[1].title}</p>
                             <p className="artist_name">{Using[1].artist}</p>
@@ -101,7 +103,7 @@ const Home = ()=>{
                         </div>
                     </div>
                     <div className="nft">
-                        {Using[2].img.includes('mp4') ?<video autoPlay muted playsInline className="home_media" ><source src={Using[2].img} type="video/mp4"/></video> : <img src={Using[2].img} alt={Using[2].title}/> }
+                        {Using[2].img.includes('mp4') ?<video autoPlay muted playsInline className="home_media" ><source src={Using[2].img} type="video/mp4"/></video> :<Zoom><img src={Using[2].img} alt={Using[2].title}/></Zoom> }
                         <div className="Text">
                             <p className="art_name">{Using[2].title}</p>
                             <p className="artist_name">{Using[2].artist}</p>
@@ -118,7 +120,7 @@ const Home = ()=>{
                 <h1>Hot Collections</h1>
                 <div className='hot'>
                     <div className="nft">
-                        {Using[0].img.includes('mp4') ?<video autoPlay muted playsInline className="home_media" ><source src={Using[0].img} type="video/mp4"/></video> : <img  src={Using[0].img} alt={Using[2].title}/> }
+                        {Using[0].img.includes('mp4') ?<video autoPlay muted playsInline className="home_media" ><source src={Using[0].img} type="video/mp4"/></video> : <Zoom><img  src={Using[0].img} alt={Using[2].title}/></Zoom> }
                         <div className="Text">
                             <p className="art_name">{Using[0].title}</p>
                             <p className="artist_name">{Using[0].artist}</p>
@@ -129,7 +131,7 @@ const Home = ()=>{
                         </div>
                     </div>
                     <div className="nft">
-                        {Using[1].img.includes('mp4') ?<video autoPlay muted playsInline className="home_media" ><source src={Using[1].img} type="video/mp4"/></video> : <img src={Using[1].img} alt={Using[1].title}/> }
+                        {Using[1].img.includes('mp4') ?<video autoPlay muted playsInline className="home_media" ><source src={Using[1].img} type="video/mp4"/></video> : <Zoom><img src={Using[1].img} alt={Using[1].title}/></Zoom> }
                         <div className="Text">
                             <p className="art_name">{Using[1].title}</p>
                             <p className="artist_name">{Using[1].artist}</p>
@@ -140,7 +142,7 @@ const Home = ()=>{
                         </div>
                     </div>
                     <div className="nft">
-                        {Using[2].img.includes('mp4') ?<video autoPlay muted playsInline className="home_media" ><source src={Using[2].img} type="video/mp4"/></video> : <img src={Using[2].img} alt={Using[2].title}/> }
+                        {Using[2].img.includes('mp4') ?<video autoPlay muted playsInline className="home_media" ><source src={Using[2].img} type="video/mp4"/></video> : <Zoom><img src={Using[2].img} alt={Using[2].title}/></Zoom> }
                         <div className="Text">
                             <p className="art_name">{Using[2].title}</p>
                             <p className="artist_name">{Using[2].artist}</p>
