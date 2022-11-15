@@ -1,6 +1,7 @@
 import React from 'react'
 import './artcard.css'
 import { useNavigate } from 'react-router-dom';
+import Zoom from 'react-medium-image-zoom';
 
 const ArtCard = (props)=>{
 
@@ -8,15 +9,17 @@ const ArtCard = (props)=>{
 
 
     const ArtProfile = {
-        name : `${props.name}`,
         title : `${props.title}`,
         description : `${props.description}`,
         price : `${props.price}`,
         artist : `${props.artist}`,
-        id : `${props.id}`
+        id : `${props.id}`,
+        image : `${props.img}`,
+        style: `${props.style}`
     }
 
     const showProduct =  ()=>{
+        localStorage.setItem('Art', JSON.stringify(ArtProfile))
         props.setProduct(ArtProfile)
         navigate(`/product/${props.id}`)
     }
@@ -28,18 +31,18 @@ const ArtCard = (props)=>{
 
     return(
         <div className='artMain'>
-            <div className='artImage' onClick={showProduct}>
+            <div className='artImage'>
                 {
                     props.img.includes('mp4') ? 
                     <video width="750" height="500"  autoPlay={true} muted={true} loop >
                         <source src={props.img} type="video/mp4"></source>
                     </video>
                     :
-                    <img src={props.img} alt="Artwork"/>
+                    <Zoom><img src={props.img} alt="Artwork"/></Zoom>
                 }
             </div>
             <div className='artText'>
-                <p>{props.title}</p>
+                <p  onClick={showProduct}>{props.title}</p>
                 <p>{props.description}</p>
                 <div className='subArtText'>
                     <p onClick={showArtist}>{props.artist}</p>

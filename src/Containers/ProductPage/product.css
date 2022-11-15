@@ -1,3 +1,208 @@
 .productMain{
+    color: black;
+}
+
+.product_info{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 5vw;
+    position: relative;
+    top: 6vw;
+}
+
+.product_info img{
+    width:40vw;
+    height: 40vw;
+    object-fit: cover;
+}
+
+.product_info video{
+    width:45vw;
+    height: auto;
+}
+
+.product_text{
+    width: 50%;
+    position: relative;
+    left: 4vw;
+}
+
+.product_text h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 2.5vw;
+}
+
+.product_artist{
+    font-weight: 700;
+    font-family: 'Manrope', serif;
+    position: relative;
+    top: 1vw;
+}
+
+.product_price{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 2.2vw;
+    position: relative;
+    top: 2vw;
+}
+
+.physical_copy{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 60%;
+    position: relative;
+    top: 3vw;
+}
+
+.physical_copy img{
+    width: 8%;
+    height: auto;
+}
+
+.physical_copy p{
+    font-family: 'Manrope', serif;
+    font-weight: 600;
+    font-size: 1.2vw;
+    align-self: center;
+    position: relative;
+    top: 0.5vw;
+    left: 1.5vw;
+}
+
+.product_text button{
+    background: black;
+    border: none;
     color: white;
+    font-family: 'Manrope', serif;
+    font-family: 600;
+    font-size: 1.5vw;
+    padding: 1vw 2.5vw 1vw 2.5vw;
+    position: relative;
+    top: 6vw;
+}
+
+.product_action{
+    width: 34%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    top: 10vw;
+}
+
+.product_share{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(246, 246, 246, 1);
+    height: 5vw;
+}
+
+.product_share img{
+    width: 30%;
+    height: auto;
+}
+
+.product_report{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(246, 246, 246, 1);
+    height: 5vw;
+}
+
+.product_report img{
+    width: 30%;
+    height: auto;
+}
+
+.product_action p {
+    margin: 0;
+    font-family: 'Manrope', serif;
+    font-size: 1vw;
+    font-weight: 600;
+    position: relative;
+    top: 0.7vw;
+}
+
+.product_description{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: #F7F7F7;
+    position: relative;
+    top: 15vw;
+    padding: 4vw 4vw 4vw 4vw;
+}
+
+.prod_desc_text{
+    width: 50%;
+}
+
+.prod_desc_text h1{
+    font-family:'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 2.2vw;
+}
+
+.prod_desc_text p{
+    font-family: 'Manrope', serif;
+    font-weight: 400;
+    line-height: 3vw;
+    font-size: 1.2vw;
+    margin-top: 2vw;
+}
+
+.prod_desc_info{
+    width: 30%;
+    position: relative;
+    left: 21vw;
+}
+
+.prod_desc_info p{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.items{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.items p {
+    font-size: 1.2vw;
+    font-family: 'Manrope', serif;
+    font-weight: 600;
+    line-height: 2vw;
+    margin-bottom: 1.5vw;
+}
+
+.prop{
+    font-weight: 500;
+    color: rgba(134, 134, 134, 1);
+}
+
+.product_activities{
+    position: relative;
+    top: 20vw;
 }

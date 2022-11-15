@@ -15,7 +15,7 @@ function App() {
    <div className='App'>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Home/>}/>
+          <Route path='/' element={<Home setProduct = {setProduct} setArtist = {setArtist} />}/>
           <Route path='/marketplace' element={<Marketplace setProduct = {setProduct} setArtist = {setArtist}/>}/>
           <Route path='/product/:id' element={<Product product = {product} />}/>
           <Route path='/artist' element={<Artist artist = {artist} />}/>

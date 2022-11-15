@@ -18,9 +18,10 @@ import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
 import Three from './three.png';
 import './home.css'
+import SlideCard from '../../Components/SliderCard/slidercard';
 
 
-const Home = ()=>{
+const Home = (props)=>{
 
     const settings = { 
         fade: true ,
@@ -31,12 +32,13 @@ const Home = ()=>{
         arrows: false
     }
 
+
     const sliderRef = useRef();
 
     const Using = Data.filter((data)=>{
         return !data.img.includes("mp4")
     })
-
+    
     return(
         <div className="home_main">
             <Header/>
@@ -48,19 +50,9 @@ const Home = ()=>{
                 </div>
                 <Slider {...settings} ref={sliderRef}>
                     {
-                        Using.map((card, index)=>{
+                        Using.map((card, i)=>{
                             return(
-                                <div key={index} className="slide">
-                                    {card.img.includes('mp4') ?<video autoPlay muted playsInline className="home_media" ><source src={card.img} type="video/mp4"/></video> : <Zoom><img className="home_media" src={card.img} alt={card.title}/></Zoom> }
-                                    <div className="Text">
-                                        <p className="art_name">{card.title}</p>
-                                        <p className="artist_name">{card.artist}</p>
-                                        <hr></hr>
-                                    </div>
-                                    <div className="price">
-                                        <p>{card.price} USDC</p>
-                                    </div>
-                                </div>
+                                <SlideCard key={i} id={Using[i].id} img={Using[i].img} title={Using[i].title} description={Using[i].description} artist={Using[i].artist} price={Using[i].price} style={Using[i].style} setProduct = {props.setProduct} setArtist = {props.setArtist} />
                             )
                         })
                     }
