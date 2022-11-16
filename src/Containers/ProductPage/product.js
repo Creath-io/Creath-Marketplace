@@ -5,6 +5,8 @@ import Zoom from 'react-medium-image-zoom';
 import Picture from './physical_copy.png';
 import Share from './share.png';
 import Report from './report.png';
+import Activity from '../../Components/Activity/activity';
+import Footer from '../../Components/Footer/footer';
 
 
 
@@ -93,6 +95,17 @@ const Product = ({product})=>{
                     <p>Date</p>
                     <p>Time</p>
                 </div>
+                <div className='activities'>
+                    <Activity event="Buy" price="23,000" from="John Doe" to={Arts.artist} date="22/02/22" time="02:02:22"/>
+                    <Activity event="Minted" price="" from="John Doe" to="" date="22/02/22" time="02:02:22"/>
+                    <Activity event="Transfer" price="" from="John Doe" to={Arts.artist} date="22/02/22" time="02:02:22"/>
+                    <Activity event="Buy" price="23,000" from="John Doe" to={Arts.artist} date="22/02/22" time="02:02:22"/>
+                    <Activity event="Minted" price="" from="John Doe" to="" date="22/02/22" time="02:02:22"/>
+                    <Activity event="Transfer" price="" from="John Doe" to={Arts.artist} date="22/02/22" time="02:02:22"/>
+                </div>
+            </div>
+            <div className='prodFooter'>
+                <Footer/>
             </div>
         </div>
     )

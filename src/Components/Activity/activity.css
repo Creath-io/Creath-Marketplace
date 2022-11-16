@@ -1,0 +1,83 @@
+.buyMain{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 3.5vw 1vw 3.5vw;
+    font-family: 'Manrope', serif;
+}
+
+.buyMain p{
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2vw;
+    position: relative;
+    clear: both;
+    width: 10%;
+}
+
+.mintMain{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 3.5vw 1vw 3.5vw;
+    font-family: 'Manrope', serif;
+}
+
+.mintMain p{
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2vw;
+    position: relative;
+    clear: both;
+    width: 10%;
+}
+
+.transMain{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 3.5vw 1vw 3.5vw;
+    font-family: 'Manrope', serif;
+}
+
+.transMain p{
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2vw;
+    position: relative;
+    clear: both;
+    width: 10%;
+}
+
+.buyEvent {
+    text-align: left !important;
+}
+
+.buyPrice{
+
+}
+
+.buyFrom{
+
+}
+
+.buyTo{
+
+}
+
+.buyDate{
+
+}
+
+.buyTime{
+
+}

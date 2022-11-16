@@ -21,6 +21,7 @@ import './home.css'
 import SlideCard from '../../Components/SliderCard/slidercard';
 
 
+
 const Home = (props)=>{
 
     const settings = { 
@@ -32,12 +33,14 @@ const Home = (props)=>{
         arrows: false
     }
 
-
     const sliderRef = useRef();
+
 
     const Using = Data.filter((data)=>{
         return !data.img.includes("mp4")
     })
+
+
     
     return(
         <div className="home_main">
@@ -55,6 +58,7 @@ const Home = (props)=>{
                                 <SlideCard key={i} id={Using[i].id} img={Using[i].img} title={Using[i].title} description={Using[i].description} artist={Using[i].artist} price={Using[i].price} style={Using[i].style} setProduct = {props.setProduct} setArtist = {props.setArtist} />
                             )
                         })
+
                     }
                 </Slider>
                 <div className="arrows">

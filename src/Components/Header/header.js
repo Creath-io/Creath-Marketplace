@@ -21,7 +21,6 @@ const Header = ()=>{
                 <p onClick={()=>{changePage('/exhibition')}}>Exhibitions</p>
             </div>
             <div className='buttons'>
-                <button className='SignUp'>Sign Up</button>
                 <button className='Login'>Login</button>
             </div>
         </div>
