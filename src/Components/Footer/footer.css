@@ -51,6 +51,7 @@
     border-bottom: thin solid rgba(255, 255, 255, 0.2);
     border-right: thin solid rgba(255, 255, 255, 0.2);
     padding: 1vw 5.5vw 2vw 5.5vw;
+    font-size: 1vw;
 }
 
 .footer_buttons .odd{

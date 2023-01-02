@@ -14,8 +14,7 @@
     font-weight: 600;
     font-size: 1.2vw;
     position: relative;
-    clear: both;
-    width: 10%;
+    width: 15%;
 }
 
 .mintMain{
@@ -30,12 +29,31 @@
 
 .mintMain p{
     margin: 0;
-    text-align: center;
     font-weight: 600;
     font-size: 1.2vw;
     position: relative;
-    clear: both;
-    width: 10%;
+}
+
+.mintTime {
+    width: 20%;
+    text-align: right;
+    padding: 0 3.4vw 0 0;
+}
+
+.mintDate {
+    width: 20%;
+    text-align: right; 
+    left: 5vw;
+}
+
+.mintFrom {
+    width: 20%;
+    text-align: right;
+}
+
+.mintEvent {
+    width: 17%;
+    text-align: center;
 }
 
 .transMain{
@@ -50,34 +68,33 @@
 
 .transMain p{
     margin: 0;
-    text-align: center;
     font-weight: 600;
     font-size: 1.2vw;
     position: relative;
-    clear: both;
-    width: 10%;
+    width: 20%;
+    text-align: right;
 }
 
-.buyEvent {
-    text-align: left !important;
+.transEvent {
+    text-align: center !important;
+    right: 13px;
 }
 
-.buyPrice{
-
+.transFrom {
+    left: 4vw;
 }
 
-.buyFrom{
-
+.transTo {
+    left: 1.5vw;
 }
 
-.buyTo{
-
+.transDate {
+    text-align: center !important;
+    left: 4.2vw;
 }
 
-.buyDate{
-
+.transTime {
+    text-align: center !important;
+    left: 2.1vw;
 }
 
-.buyTime{
-
-}
